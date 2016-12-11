@@ -1,17 +1,30 @@
-*.class
-*.log
-
-# sbt specific
-.cache
+logs
+project/project
+project/target
+target
+**/project/project
+**/project/target
+**/target
+tmp
 .history
-.lib/
-dist/*
-target/
-lib_managed/
-src_managed/
-project/boot/
-project/plugins/project/
+/.idea
+**/.idea
+.sbtserver/*
+frontend/root/dist
+frontend/root/node_modules
+project/.sbtserver
+project/.sbtserver.lock
+project/play-fork-run.sbt
+project/sbt-ui.sbt
+**/project/.sbtserver
+**/project/.sbtserver.lock
+**/project/play-fork-run.sbt
+**/project/sbt-ui.sbt
+/*.iml
+/out
+/.idea_modules
+/.classpath
+/.project
+/RUNNING_PID
 
-# Scala-IDE specific
-.scala_dependencies
-.worksheet
+/src/main/resources/root/node_modules
