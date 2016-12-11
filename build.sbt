@@ -1,15 +1,18 @@
 name := "mauth"
 
-lazy val buildNumber = sys.props.getOrElse("build.number", default = "0")
+organization := "com.vitold"
 
-lazy val revision = sys.props.getOrElse("build.vcs.number", default = "0")
-
-version := buildNumber + "." + revision
+version := "0.0.1"
 
 scalaVersion := "2.11.8"
 
+bintrayOrganization := Some("vkocherga")
+bintrayPackage := "mauth"
+
 lazy val akkaVersion = "2.4.14"
 lazy val akkaHttpVersion = "10.0.0"
+
+licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 
 
 lazy val runtimeScopeDependencies = Seq(
